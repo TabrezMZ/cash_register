@@ -1,0 +1,68 @@
+body {
+    background-color: aqua;
+}
+
+header{
+    text-align: center;
+    background-color: rgba(127, 255, 168, 0.802);
+    margin: 0;
+    padding: 5px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 50vw;
+    height: 10vh;
+    margin: 10px;
+    background-color: antiquewhite;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    margin: 10px;
+}
+
+button{
+    width: 30vw;
+    height: 10vh;
+    background-color: blueviolet;
+    color: antiquewhite;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: antiquewhite;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  caption {
+    font-size: 20px;
+    margin: 20px;
+    font-weight: 700;
+  }
+
+
+ th, td {
+    border: 2px solid rgb(97, 142, 7);
+  }
+
+  #message{
+    font-size: 20px;
+    margin: 6px;
+    font-weight: bold;
+    color: red;
+  }
