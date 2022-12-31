@@ -12,7 +12,7 @@ button.addEventListener("click", check)
 function check(){
   hideMessage()
   if(billAmount.value>0){
-    if(cashGiven.value >= billAmount.value){
+    if(Number(cashGiven.value) >= Number(billAmount.value)){
         const returnedAmount = cashGiven.value - billAmount.value; 
         returenedNotes(returnedAmount)
     }
@@ -25,23 +25,25 @@ function check(){
   }
 }
 
+function returenedNotes(returnedAmount){
+  for(var i = 0; i< availableNotes.length; i++){
+     const numberOfNotes = Math.trunc(returnedAmount/availableNotes[i]);
+
+     returnedAmount = returnedAmount % availableNotes[i];
+
+     noOfNotes[i].innerText = numberOfNotes;
+  }
+}
+
 function hideMessage(){
-  message.innerHTML = ""
+  message.innerText = ""
 }
 
 function showMessage(msg){
-   message.innerHTML = msg
+   message.innerText = msg
 }
 
-function returenedNotes(returnedAmount){
-    for(var i = 0; i< availableNotes.length; i++){
-       const numberOfNotes = Math.trunc(returnedAmount/availableNotes[i]);
 
-       returnedAmount = returnedAmount % availableNotes[i];
-
-       noOfNotes[i].innerText = numberOfNotes;
-    }
-}
 
 
 

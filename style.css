@@ -4,7 +4,7 @@ body {
 
 header{
     text-align: center;
-    background-color: rgba(127, 255, 168, 0.802);
+    background-color: rgba(9, 167, 59, 0.541);
     margin: 0;
     padding: 5px;
 }
@@ -22,6 +22,7 @@ input {
     margin: 10px;
     background-color: antiquewhite;
     border-radius: 4px;
+    font-size: 30px;
 }
 
 label {
@@ -57,7 +58,7 @@ table {
 
 
  th, td {
-    border: 2px solid rgb(97, 142, 7);
+    border: 2px solid rgb(86, 127, 5);
   }
 
   #message{
